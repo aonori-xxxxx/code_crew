@@ -362,8 +362,6 @@ h3 {
   text-align: center;
   padding: 30px 20px;
   font-size: clamp(16px, 2vw, 32px);
-  color: greenyellow;
-  background-color: brown;
 }
 
 .cards--col3.flex {
