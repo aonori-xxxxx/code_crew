@@ -33,6 +33,7 @@ a {
   max-width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 
 .flex {
@@ -494,6 +495,12 @@ single-front_css.php
   gap: 0 3%;
   justify-content: space-around;
   margin-bottom: 50px;
+  display: block;
+}
+@media (min-width:768px) {
+  .front-css__contents {
+    display: flex;
+  }
 }
 
 .front-css__contents:after {
@@ -629,6 +636,13 @@ single-front_css.php
 }
 
 /*===============================================
+front-css
+================================================*/
+.front-css__inner {
+  text-align: center;
+}
+
+/*===============================================
 ボタン
 ================================================*/
 .sample-btn__standard {
@@ -643,7 +657,7 @@ single-front_css.php
   text-align: center;
   text-decoration: none;
   transition: 0.25s;
-  width: 100%;
+  width: 90%;
 }
 
 .sample-btn__standard:focus,
@@ -665,7 +679,7 @@ single-front_css.php
   text-align: center;
   text-decoration: none;
   transition: 0.25s;
-  width: 100%;
+  width: 90%;
   padding-left: 1.38em;
   padding-right: 2em;
   position: relative;
@@ -699,7 +713,7 @@ single-front_css.php
   text-align: center;
   text-decoration: none;
   transition: 0.25s;
-  width: 100%;
+  width: 90%;
   font-size: 1.375rem;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -724,7 +738,7 @@ single-front_css.php
   text-align: center;
   text-decoration: none;
   transition: 0.25s;
-  width: 100%;
+  width: 90%;
 }
 
 .sample-btn__warning:focus,
