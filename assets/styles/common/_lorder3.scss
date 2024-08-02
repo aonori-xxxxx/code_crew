@@ -1,0 +1,86 @@
+@import "mixin";
+
+
+.pace-done .container {
+  transition: opacity 1s;
+  opacity   : 1;
+
+}
+
+.pace-done .pace-img {
+  opacity: 0;
+
+}
+
+.pace-running .pace-img {
+  opacity: 1;
+
+}
+
+
+.container {
+  opacity: 0;
+}
+
+.pace {
+
+  z-index    : 2000;
+  position   : fixed;
+  margin     : auto;
+  top        : 0;
+  left       : 0;
+  right      : 0;
+  bottom     : 0;
+  width      : 100px;
+  height     : 100px;
+  // overflow: hidden;
+}
+
+.pace .pace-progress {
+  transform : none !important;
+  text-align: center;
+}
+
+.pace .pace-progress:after {
+  content    : attr(data-progress-text);
+  display    : block;
+  font-weight: 100;
+  font-size  : 2em;
+
+  font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo, sans-serif';
+  color      : gray;
+}
+
+
+
+
+
+.pace.pace-inactive {
+  display: none;
+}
+
+
+.pace-progress-inner {
+  width           : 64px;
+  height          : 64px;
+  margin          : 1px auto;
+  background-image: url(/wp-content/themes/code-crew/assets/images/sample/pig.png);
+
+
+
+  @include animation($name: sk-rotateplane, $duration:1.2s, $iteration-count:infinite)
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: translateY(-20px)
+  }
+
+  50% {
+    transform: translateY(10px)
+  }
+
+  100% {
+    transform: translateY(-10px)
+  }
+}
