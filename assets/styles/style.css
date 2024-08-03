@@ -363,7 +363,7 @@ h3 {
   text-align: center;
   padding: 30px 20px;
   font-size: clamp(16px, 2vw, 32px);
-  color: yellow;
+  color: pink;
 }
 
 .cards--col3.flex {
