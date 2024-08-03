@@ -10,16 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ssh and deploy
-        uses: actions/checkout@v4
-        # uses: appleboy/ssh-action@master
+        # uses: actions/checkout@v4
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SECRET_KEY}}
-          # ssh-key: ${{ secrets.SECRET_KEY}}    
+          key: ${{ secrets.SSH_PRIVATE_KEY}}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SSH_PORT }}
-          run: |
-            cd /home/yscode/code-crew.jp/public_html/wp-content/themes/code-crew            
+          script: |
+            cd /home/yscode/code-crew.jp/public_html/stg.code-crew.jp/wp-content/themes/code-crew
             git checkout develop
             git pull origin develop
