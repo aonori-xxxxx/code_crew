@@ -19,6 +19,6 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd /home/yscode/code-crew.jp/public_html/wp-content/themes/code-crew            
+            cd /home/yscode/code-crew.jp/public_html/stg.code-crew.jp/wp-content/themes/code-crew
             git checkout develop
             git pull origin develop

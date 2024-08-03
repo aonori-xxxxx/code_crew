@@ -36,7 +36,7 @@ a {
   max-width    : 1280px;
   padding-left : 20px;
   padding-right: 20px;
-  width: 100%;
+  width        : 100%;
 
 }
 
@@ -417,7 +417,7 @@ h3 {
   text-align: center;
   padding   : 30px 20px;
   font-size : clamp(16px, 2vw, 32px);
-
+  color     : orange;
 
 }
 
@@ -565,10 +565,38 @@ single-front_css.php
   margin-bottom  : 50px;
   display        : block;
 
-  @include mq(ml) {
-    display: flex;
+  &:first-of-type {
+
+    @include mq(ml) {
+      display: flex;
+    }
   }
 }
+
+.section__sub-title {
+
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    display: none;
+
+    @include mq(lg) {
+      display: initial;
+    }
+  }
+}
+
+.front-css__contents {
+
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    display: none;
+
+    @include mq(lg) {
+      display: initial;
+    }
+  }
+}
+
 
 .front-css__contents:after {
   content: "";

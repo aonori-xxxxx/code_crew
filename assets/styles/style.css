@@ -363,6 +363,7 @@ h3 {
   text-align: center;
   padding: 30px 20px;
   font-size: clamp(16px, 2vw, 32px);
+  color: orange;
 }
 
 .cards--col3.flex {
@@ -498,8 +499,26 @@ single-front_css.php
   display: block;
 }
 @media (min-width:768px) {
-  .front-css__contents {
+  .front-css__contents:first-of-type {
     display: flex;
+  }
+}
+
+.section__sub-title:nth-of-type(3), .section__sub-title:nth-of-type(4) {
+  display: none;
+}
+@media (min-width: 960px) {
+  .section__sub-title:nth-of-type(3), .section__sub-title:nth-of-type(4) {
+    display: initial;
+  }
+}
+
+.front-css__contents:nth-of-type(3), .front-css__contents:nth-of-type(4) {
+  display: none;
+}
+@media (min-width: 960px) {
+  .front-css__contents:nth-of-type(3), .front-css__contents:nth-of-type(4) {
+    display: initial;
   }
 }
 
