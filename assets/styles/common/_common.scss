@@ -576,7 +576,8 @@ single-front_css.php
 .section__sub-title {
 
   &:nth-of-type(3),
-  &:nth-of-type(4) {
+  &:nth-of-type(4),
+  &:last-of-type {
     display: none;
 
     @include mq(lg) {
@@ -588,7 +589,8 @@ single-front_css.php
 .front-css__contents {
 
   &:nth-of-type(3),
-  &:nth-of-type(4) {
+  &:nth-of-type(4),
+  &:last-of-type {
     display: none;
 
     @include mq(lg) {
