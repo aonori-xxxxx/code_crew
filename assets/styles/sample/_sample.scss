@@ -1,12 +1,15 @@
-@use "../common/mq" as *;
-@use "../common/mixin" as *;
+@use "../common/mq"as *;
+@use "../common/mixin"as *;
+@use "../common/variables"as *;
+
 
 /*===============================================
 front-css
 ================================================*/
-.front-css__inner{
-text-align: center;
+.front-css__inner {
+  text-align: center;
 }
+
 /*===============================================
 ボタン
 ================================================*/
@@ -349,13 +352,13 @@ text-align: center;
 メニュー
 ================================================*/
 .sample-heading-lv1 {
-  
+
   background-color: #000;
   color           : #fff;
   font-size       : 1.75rem;
   padding         : 30px 10px;
   text-align      : center;
-  
+
 
 }
 
@@ -1428,11 +1431,11 @@ text-align: center;
 // .front-js-sample-title__wrapper,
 
 .archive__title-wrapper {
-  align-items: center;
-  display    : flex;
+  align-items    : center;
+  display        : flex;
   justify-content: center;
-  padding    : 30px 0;
-  
+  padding        : 30px 0;
+
 }
 
 // .front-js-sample-title,
@@ -1663,8 +1666,8 @@ text-align: center;
   margin-bottom: 50px;
 
 }
-.section__sub-title
-{
+
+.section__sub-title {
   text-align   : center;
   margin-top   : 20px;
   margin-bottom: 20px;
