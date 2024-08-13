@@ -1,54 +1,27 @@
-/*------------------------------------------------
+/*================================================
 色
-------------------------------------------------*/
-// モバイルメニュー
-$mobileMenuButtonColor:#000000;
-$mobileMenuBGColor    :#ffffff;
-$mobileMenuTextColor  :#000000;
-$mobileMenuLineColor  :#d7d5d5;
-
-// ヘッダー
-$headerBGColor              :#ffffff;
-$headerMenuUnderLineColor   :#000000;
-$headerMenuTextColor        :#000000;
-$headerSubMenuColor         :#efebeb;
-$headerSubMenuUnderLineColor:#000000;
-
-// パンクズ
-$breadcrumbTextColor:#000000;
-
-
-//fv
-$fvTextColor      :#ffffff;
-$fvTextShadowColor:#777777;
-$fvLogoColor      :#000000;
-$fvImageColor     :#000000;
-
-// カード
-$cardShadowColor  :rgba(0, 0, 0, 0.16);
-$cardBGColor      :#efebeb;
-$cardBodyTextColor:#000000;
-$cardPinColor     :#000000;
-
-// フッター
-$footerBGColor  :#000000;
-$footerTextColor:#ffffff;
-
-// コンタクトフォーム
-$contactformInputColor   :#f1f5f8;
-$contactformTextareaColor:#f1f5f8;
-$contactButtonBGColor    :linear-gradient(1deg, #ffffff, 1%, #333638);
-$contactButtonTextColor  :#ffffff;
-$contactRequiredColor    :#ff0000;
-
+================================================*/
 /*------------------------------------------------
-色 sample.scss
+common.scss
 ------------------------------------------------*/
 
 
-/*------------------------------------------------
+$colorBlack     :#000000;
+$colorWhite     :#ffffff;
+$colorVeryLightGray :#efebeb;
+$colorLightGray :#d7d5d5;
+$colorGray:#777777;
+$colorLigthBlue:#f1f5f8;
+$colorGradientWhiteGray:linear-gradient(1deg, #ffffff, 1%, #333638);
+$colorRed:#ff0000;
+$colorBlackTransparent016  :rgba(0, 0, 0, 0.16);
+
+
+
+
+/*================================================
 幅、高さ
-------------------------------------------------*/
+================================================*/
 $contentMaxWidth :740px;
 $itemListImgWidth:264px;
 $itemListImgHight:166px;

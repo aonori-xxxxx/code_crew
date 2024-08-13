@@ -83,7 +83,7 @@ h3 {
   z-index : 20;
 
   & span {
-    background-color: $colorBlack;
+    background-color: $mobileMenuButtonColor;
     border-radius   : 4px;
     display         : block;
     height          : 4px;
@@ -120,7 +120,7 @@ h3 {
 }
 
 .mobile-menu {
-  background-color   : $colorWhite;
+  background-color   : $mobileMenuBGColor;
   height             : 100%;
   position           : fixed;
   transition         : transform 0.6s;
@@ -148,7 +148,7 @@ h3 {
 }
 
 .mobile-menu__inner a {
-  color    : $colorBlack;
+  color    : $mobileMenuTextColor;
   font-size: 24px;
 }
 
@@ -161,7 +161,7 @@ h3 {
 }
 
 .mobile-menu__inner li {
-  border-top  : 1px solid $colorLightGray;
+  border-top  : 1px solid #d7d5d5;
   padding     : 22px 0;
   padding-left: 20px;
   position    : relative;
@@ -191,7 +191,7 @@ h3 {
 }
 
 .header {
-  background-color: $colorWhite;
+  background-color: $headerBGColor;
   height          : 100px;
 }
 
@@ -206,7 +206,7 @@ h3 {
 
   a:link,
   a {
-    color:$colorBlack;
+    color:$headerMenuTextColor;
   }
 }
 
@@ -229,7 +229,7 @@ h3 {
     a {
 
       &:hover {
-        border-bottom: 1px solid $colorBlack;
+        border-bottom: 1px solid $headerMenuUnderLineColor;
 
         opacity: 0.6;
         scale  : 1.01;
@@ -263,7 +263,7 @@ h3 {
   padding-right : 20px;
 
   & a {
-    color: $colorBlack;
+    color: $breadcrumbTextColor;
   }
 }
 
@@ -286,7 +286,7 @@ h3 {
 }
 
 .header-menu>.menu-item:hover .sub-menu {
-  background-color: $colorVeryLightGray;
+  background-color: $headerSubMenuColor;
   box-shadow      : 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   transform       : translateY(0);
   visibility      : visible;
@@ -300,7 +300,7 @@ h3 {
   padding    : 10px;
 
   a {
-    border-bottom: $colorBlack solid 1px;
+    border-bottom: $headerSubMenuUnderLineColor solid 1px;
   }
 }
 
@@ -346,18 +346,18 @@ h3 {
 
   h2 {
     // 文字のシャドウ
-    color      : $colorWhite;
+    color      : $fvTextColor;
     display    : inline-block;
     font-weight: bold;
-    text-shadow: 2px 2px 10px $colorGray,
-      -2px 2px 10px$colorGray,
-      2px -2px 10px $colorGray,
-      -2px -2px 10px $colorGray;
+    text-shadow: 2px 2px 10px $fvTextShadowColor,
+      -2px 2px 10px$fvTextShadowColor,
+      2px -2px 10px $fvTextShadowColor,
+      -2px -2px 10px $fvTextShadowColor;
   }
 }
 
 .fv__logo {
-  filter   : drop-shadow(10px 14px 15px $colorBlack);
+  filter   : drop-shadow(10px 14px 15px $fvLogoColor);
   left     : 50%;
   position : absolute;
   top      : 50%;
@@ -371,7 +371,7 @@ h3 {
   position : absolute;
 
   img {
-    filter: drop-shadow(1px 15px 16px $colorBlack);
+    filter: drop-shadow(1px 15px 16px $fvImageColor);
   }
 }
 
@@ -433,7 +433,7 @@ h3 {
 }
 
 .card {
-  box-shadow   : 25px 19px 13px 4px $colorBlackTransparent016;
+  box-shadow   : 25px 19px 13px 4px $cardShadowColor;
   flex         : 0 335px;
   margin-bottom: 40px;
   min-height   : 450px;
@@ -443,7 +443,7 @@ h3 {
 }
 
 .bg--gray {
-  background-color: $colorVeryLightGray;
+  background-color: $cardBGColor;
 }
 
 .card:hover {
@@ -464,7 +464,7 @@ h3 {
   text-align    : left;
 
   & a {
-    color: $colorBlack;
+    color: $cardBodyTextColor;
   }
 }
 
@@ -473,7 +473,7 @@ h3 {
 
   img {
     width : 40px;
-    filter: drop-shadow(2px 6px 6px $colorBlack)
+    filter: drop-shadow(2px 6px 6px $cardPinColor)
   }
 }
 
@@ -494,7 +494,7 @@ h3 {
 ================================================*/
 
 .footer {
-  background-color: $colorBlack;
+  background-color: $footerBGColor;
   margin-top      : auto;
 }
 
@@ -513,7 +513,7 @@ footer {
 
   a:link,
   a {
-    color: $colorWhite;
+    color: $footerTextColor;
   }
 }
 
@@ -690,7 +690,7 @@ single-front_css.php
   border: none;
 
   textarea {
-    background-color: $colorLigthBlue;
+    background-color: $contactformTextareaColor;
     margin-top      : 5px;
     resize          : none;
     padding-left    : 10px;
@@ -699,7 +699,7 @@ single-front_css.php
 }
 
 .wpcf7-form-control-wrap input {
-  background-color: $colorLigthBlue;
+  background-color: $contactformInputColor;
   height          : 35px;
   margin-bottom   : 20px;
   margin-top      : 5px;
@@ -712,10 +712,10 @@ single-front_css.php
 }
 
 .wpcf7-submit {
-  background   : $colorGradientWhiteGray;
+  background   : $contactButtonBGColor;
   border-radius: 5px;
   box-shadow   : 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  color        : $colorWhite;
+  color        : $contactButtonTextColor;
   height       : 50px;
   width        : 100%;
 
@@ -738,5 +738,5 @@ single-front_css.php
 }
 
 .required {
-  color: $colorRed;
+  color: $contactRequiredColor;
 }
