@@ -15,12 +15,12 @@ front-css
 ================================================*/
 // 基本
 .sample-btn__standard {
-  background-color: #000000;
+  background-color: $colorBlack;
   border          : 2px solid transparent;
   //borderをホバー時のみに付与するとホバーしたとき
   //サイズが異なってしまうためあらかじめサイズを確保するため。
   box-shadow      : 0 3px 6px rgba(0, 0, 0, .16);
-  color           : #ffffff;
+  color           : $colorWhite;
   display         : inline-block;
   font-size       : 1.125rem;
   max-width       : 100%;
@@ -33,17 +33,17 @@ front-css
 
 .sample-btn__standard:focus,
 .sample-btn__standard:hover {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border-color    : currentColor;
-  color           : #000000;
+  color           : $colorBlack;
 }
 
 // 矢印
 .sample-btn--arrow-right {
-  background-color: #000000;
+  background-color: $colorBlack;
   border          : 2px solid transparent;
   box-shadow      : 0 3px 6px rgba(0, 0, 0, .16);
-  color           : #ffffff;
+  color           : $colorWhite;
   display         : inline-block;
   font-size       : 1.125rem;
   max-width       : 100%;
@@ -71,17 +71,17 @@ front-css
 
 .sample-btn--arrow-right:focus,
 .sample-btn--arrow-right:hover {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border-color    : currentColor;
-  color           : #000000;
+  color           : $colorBlack;
 }
 
 // 大ボタン
 .sample-btn__large {
-  background-color: #000000;
+  background-color: $colorBlack;
   border          : 2px solid transparent;
   box-shadow      : 0 3px 6px rgba(0, 0, 0, .16);
-  color           : #ffffff;
+  color           : $colorWhite;
   display         : inline-block;
   max-width       : 100%;
   padding         : 20px 10px;
@@ -98,18 +98,18 @@ front-css
 
 .sample-btn__large:focus,
 .sample-btn__large:hover {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border-color    : currentColor;
-  color           : #000000;
+  color           : $colorBlack;
 }
 
 
 // 色違い(色反転)
 .sample-btn__warning {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border          : 2px solid transparent;
   box-shadow      : 0 3px 6px rgba(0, 0, 0, .16);
-  color           : #000000;
+  color           : $colorBlack;
   display         : inline-block;
   font-size       : 1.125rem;
   max-width       : 100%;
@@ -122,16 +122,16 @@ front-css
 
 .sample-btn__warning:focus,
 .sample-btn__warning:hover {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
 }
 
 // バリエーション：角丸ボタン
 
 .sample-btn__rounded {
-  background-color: #000000;
+  background-color: $colorBlack;
   border          : 2px solid transparent;
-  color           : #ffffff;
+  color           : $colorWhite;
   display         : inline-block;
   font-size       : 1.125rem;
   max-width       : 100%;
@@ -146,9 +146,9 @@ front-css
 
 .sample-btn__rounded:focus,
 .sample-btn__rounded:hover {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border-color    : currentColor;
-  color           : #000000;
+  color           : $colorBlack;
 }
 
 
@@ -160,7 +160,7 @@ front-css
   display        : inline-block;
   padding        : .2em .3em;
   border         : 1px solid currentColor;
-  color          : #000000;
+  color          : $colorBlack;
   text-decoration: none;
   transition     : .25s;
 
@@ -177,8 +177,8 @@ front-css
 
 .sample-icon__download:focus,
 .sample-icon__download:hover {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
 }
 
 // 拡大
@@ -187,7 +187,7 @@ front-css
   display        : inline-block;
   padding        : .2em .3em;
   border         : 1px solid currentColor;
-  color          : #000000;
+  color          : $colorBlack;
   text-decoration: none;
   transition     : .25s;
 }
@@ -204,8 +204,8 @@ front-css
 
 .sample-icon__zoom:focus,
 .sample-icon__zoom:hover {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
 }
 
 
@@ -213,7 +213,7 @@ front-css
 .sample-icon__pdf::before {
   display     : inline-block;
   margin-right: .3em;
-  color       : #000000;
+  color       : $colorBlack;
   font-family : 'Font Awesome 5 Free';
   font-weight : 400;
   content     : '\f1c1';
@@ -223,7 +223,7 @@ front-css
 .sample-icon__excel::before {
   display     : inline-block;
   margin-right: .3em;
-  color       : #000000;
+  color       : $colorBlack;
   font-family : 'Font Awesome 5 Free';
   font-weight : 400;
   content     : '\f1c3';
@@ -234,7 +234,7 @@ front-css
 .sample-icon__power-point::before {
   display     : inline-block;
   margin-right: .3em;
-  color       : #000000;
+  color       : $colorBlack;
   font-family : 'Font Awesome 5 Free';
   font-weight : 400;
   content     : '\f1c4';
@@ -245,7 +245,7 @@ front-css
 .sample-icon__check-square::before {
   display     : inline-block;
   margin-right: .3em;
-  color       : #000000;
+  color       : $colorBlack;
   font-family : 'Font Awesome 5 Free';
   font-weight : 400;
   content     : '\f14a';
@@ -256,14 +256,14 @@ front-css
 .sample-icon__chevron-left::before {
   display      : inline-block;
   margin-right : .3em;
-  color        : #000000;
+  color        : $colorBlack;
   font-family  : 'Font Awesome 5 Free';
   font-weight  : 400;
   content      : '';
   width        : .375em;
   height       : .375em;
-  border-bottom: .125em solid #000000;
-  border-left  : .125em solid #000000;
+  border-bottom: .125em solid $colorBlack;
+  border-left  : .125em solid $colorBlack;
   transform    : rotate(45deg) translateY(-30%);
 }
 
@@ -272,14 +272,14 @@ front-css
 .sample-icon__chevron-right::after {
   display     : inline-block;
   margin-left : .3em;
-  color       : #000000;
+  color       : $colorBlack;
   font-family : 'Font Awesome 5 Free';
   font-weight : 900;
   content     : '';
   width       : .375em;
   height      : .375em;
-  border-top  : .125em solid #000000;
-  border-right: .125em solid #000000;
+  border-top  : .125em solid $colorBlack;
+  border-right: .125em solid $colorBlack;
   // transform: rotate(45deg);
   transform   : rotate(45deg) translateY(-4px);
 }
@@ -289,27 +289,27 @@ front-css
 .sample-label__news {
   display         : inline-block;
   padding         : .2em .3em;
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
   font-size       : .75rem;
   font-weight     : bold;
 }
 
 .sample-label__news:focus,
 .sample-label__news:hover {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border-color    : currentColor;
-  color           : #000000;
+  color           : $colorBlack;
 
 }
 
 // label link
 
 .sample-label--link {
-  background-color: #000000;
+  background-color: $colorBlack;
   display         : inline-block;
   border          : 2px solid transparent;
-  color           : #ffffff;
+  color           : $colorWhite;
   font-size       : .75rem;
   font-weight     : bold;
   padding         : .2em .3em;
@@ -319,9 +319,9 @@ front-css
 
 .sample-label--link:focus,
 .sample-label--link:hover {
-  background-color: #ffffff;
+  background-color: $colorWhite;
   border-color    : currentColor;
-  color           : #000000;
+  color           : $colorBlack;
 }
 
 // バリエーション：角丸ラベル
@@ -329,9 +329,9 @@ front-css
 .sample-rounded-label {
   display         : inline-block;
   padding         : .3em .9em;
-  background-color: #000000;
+  background-color: $colorBlack;
   border-radius   : 1em;
-  color           : #ffffff;
+  color           : $colorWhite;
   font-size       : .75rem;
   font-weight     : bold;
 }
@@ -341,8 +341,8 @@ front-css
 .sample-label__warning {
   display         : inline-block;
   padding         : .2em .3em;
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
   font-size       : .75rem;
   font-weight     : bold;
 }
@@ -352,8 +352,8 @@ front-css
 メニュー
 ================================================*/
 .sample-heading-lv1 {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
   font-size       : 1.75rem;
   padding         : 30px 10px;
   text-align      : center;
@@ -381,7 +381,7 @@ front-css
 // レベル2
 .sample-heading-lv2 {
   padding-bottom: 10px;
-  border-bottom : 4px solid #000000;
+  border-bottom : 4px solid $colorBlack;
   font-size     : 1.75rem;
   font-weight   : bold;
 }
@@ -391,7 +391,7 @@ front-css
 // レベル3
 .sample-heading-lv3 {
   padding-bottom: 6px;
-  border-bottom : 2px solid #000000;
+  border-bottom : 2px solid $colorBlack;
   font-size     : 1.5rem;
   font-weight   : bold;
 }
@@ -399,7 +399,7 @@ front-css
 // レベル4
 .sample-heading-lv4 {
   padding-left: 6px;
-  border-left : 2px solid #000000;
+  border-left : 2px solid $colorBlack;
   font-size   : 1.25rem;
   font-weight : bold;
 }
@@ -418,7 +418,7 @@ front-css
 
 // レベル7
 .sample-caution-text {
-  color: #d40152;
+  color: $colorDardRed;
 }
 
 // レベル8   
@@ -432,7 +432,7 @@ front-css
 ================================================*/
 
 .sample-front-css__content {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid $colorBlack;
 }
 
 .sample-section-header__inner {
@@ -479,14 +479,14 @@ front-css
   display        : block;
   padding        : 15px 5px;
   border-bottom  : 4px solid transparent;
-  color          : #222;
+  color          : $colorDarkGray;
   text-decoration: none;
   transition     : .25s;
 }
 
 .sample-header-nav__link:focus,
 .sample-header-nav__link:hover {
-  border-bottom-color: #000000;
+  border-bottom-color: $colorBlack;
 }
 
 .sample-header-nav__link::after {
@@ -497,14 +497,14 @@ front-css
   width   : 1px;
   height  : 20px;
 
-  background-color: #000000;
+  background-color: $colorBlack;
   transform       : translateY(-50%);
 }
 
 
 // ヘッダー2
 .sample-front-css__content2 {
-  background-color: #ffffff;
+  background-color: $colorWhite;
 
 }
 
@@ -538,7 +538,7 @@ front-css
 }
 
 .sample-header {
-  background-color: #ffffff;
+  background-color: $colorWhite;
 }
 
 .sample-header__inner {
@@ -548,7 +548,7 @@ front-css
 
   a:link,
   a {
-    color: black;
+    color: $colorBlack;
   }
 }
 
@@ -568,7 +568,7 @@ front-css
   .sample-menu-item {
     a {
       &:hover {
-        border-bottom: 1px solid #000000;
+        border-bottom: 1px solid $colorBlack;
         scale        : 1.01;
         opacity      : 0.6;
       }
@@ -606,7 +606,7 @@ front-css
 }
 
 .sample-header-menu>.sample-menu-item:hover .sample-sub-menu {
-  background-color: #efebeb;
+  background-color: $colorVeryLightGray;
   box-shadow      : 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
   transform       : translateY(0);
   visibility      : visible;
@@ -620,7 +620,7 @@ front-css
   padding    : 10px;
 
   a {
-    border-bottom: #000000 solid 1px;
+    border-bottom: $colorBlack solid 1px;
   }
 
 }
@@ -649,7 +649,7 @@ front-css
 // .footer{ //本来はfooterクラス
 .sample-front-css__content--footer {
   padding-top     : 20px;
-  background-color: #222;
+  background-color: $colorDarkGray;
 }
 
 // .footer__inner{ //本来はfooter__innerクラス
@@ -685,7 +685,7 @@ front-css
   padding-top    : 15px;
   padding-bottom : 15px;
   margin-bottom  : 10px;
-  color          : #ffffff;
+  color          : $colorWhite;
   text-decoration: none;
 }
 
@@ -710,7 +710,8 @@ front-css
 }
 
 .sample-footer-child-nav__link {
-  color          : #ddd;
+  color: $colorVeryLightGray;
+
   font-size      : 15px;
   text-decoration: none;
 }
@@ -722,14 +723,14 @@ front-css
 
 .sample-footer-copyright {
   display   : block;
-  color     : #ddd;
+  color     : $colorVeryLightGray;
   font-size : 12px;
   text-align: center;
 }
 
 
 .sample-footer--border-top-gray {
-  border-top: 1px solid #777;
+  border-top: 1px solid $colorGray;
 }
 
 
@@ -877,7 +878,7 @@ front-css
 }
 
 .sample-card__text {
-  color: #777;
+  color: $colorGray;
 }
 
 
@@ -896,7 +897,7 @@ front-css
   height      : 0;
   border-width: 3.75rem 3.75rem 0 0;
   border-style: solid;
-  border-color: #e25c00 transparent transparent transparent;
+  border-color: $colorOrange transparent transparent transparent;
 }
 
 .sample-card__badge-text {
@@ -904,7 +905,7 @@ front-css
   z-index    : 2;
   top        : .5rem;
   left       : .3125rem;
-  color      : #ffffff;
+  color      : $colorWhite;
   font-size  : .875rem;
   font-weight: bold;
 
@@ -938,7 +939,7 @@ front-css
 .sample-card--link:focus .sample-card__text,
 .sample-card--link:hover .sample-card__title,
 .sample-card--link:hover .sample-card__text {
-  color          : #e25c00;
+  color          : $colorOrange;
   text-decoration: underline;
 }
 
@@ -996,7 +997,7 @@ front-css
 ================================================*/
 // 水平テーブル
 .sample-horizontal-table {
-  border: 1px solid #000000;
+  border: 1px solid $colorBlack;
 }
 
 .sample-horizontal-table__inner {
@@ -1006,17 +1007,17 @@ front-css
 .sample-horizontal-table__header {
   width           : 20%;
   padding         : 15px;
-  background-color: #efefef;
-  border-bottom   : 1px solid #000000;
-  // border-bottom: 1px solid #ddd;
+  background-color: $colorVeryLightGray;
+  border-bottom   : 1px solid $colorBlack;
+  // border-bottom: 1px solid $colorLightGray;
   font-weight     : bold;
   vertical-align  : middle; //表セルボックスの垂直方向の配置。
 }
 
 .sample-horizontal-table__text {
   padding         : 15px;
-  // border-bottom: 1px solid #ddd;
-  border-bottom   : 1px solid #000000;
+  // border-bottom: 1px solid $colorLightGray;
+  border-bottom   : 1px solid $colorBlack;
 
 }
 
@@ -1040,7 +1041,7 @@ front-css
   }
 
   .sample-horizontal-table--md-scroll .sample-horizontal-table__text {
-    border-right: 1px solid #000000;
+    border-right: 1px solid $colorBlack;
   }
 }
 
@@ -1048,7 +1049,7 @@ front-css
 // テーブル（垂直）
 
 .sample-vertical-table {
-  border: 1px solid #000000;
+  border: 1px solid $colorBlack;
 }
 
 .sample-vertical-table__inner {
@@ -1058,21 +1059,21 @@ front-css
 }
 
 .sample-vertical-table__header-row {
-  background-color: #efefef;
+  background-color: $colorVeryLightGray;
 }
 
 .sample-vertical-table__header {
   padding              : 15px;
-  border-right         : 1px solid #000000;
-  border-bottom        : 1px solid #000000;
+  border-right         : 1px solid $colorBlack;
+  border-bottom        : 1px solid $colorBlack;
   font-weight          : bold;
   sample-vertical-align: middle;
 }
 
 .sample-vertical-table__text {
   padding              : 15px;
-  border-right         : 1px solid #000000;
-  border-bottom        : 1px solid #000000;
+  border-right         : 1px solid $colorBlack;
+  border-bottom        : 1px solid $colorBlack;
   sample-vertical-align: middle;
 }
 
@@ -1109,7 +1110,7 @@ front-css
 
 // テーブル（交差）
 .sample-cross-table {
-  border: 1px solid #000000;
+  border: 1px solid $colorBlack;
 }
 
 .sample-cross-table__inner {
@@ -1120,17 +1121,17 @@ front-css
 
 .sample-cross-table__header {
   padding         : 15px;
-  background-color: #efefef;
-  border-right    : 1px solid #000000;
-  border-bottom   : 1px solid #000000;
+  background-color: $colorVeryLightGray;
+  border-right    : 1px solid $colorBlack;
+  border-bottom   : 1px solid $colorBlack;
   font-weight     : bold;
   vertical-align  : middle;
 }
 
 .sample-cross-table__text {
   padding       : 15px;
-  border-right  : 1px solid #000000;
-  border-bottom : 1px solid #000000;
+  border-right  : 1px solid $colorBlack;
+  border-bottom : 1px solid $colorBlack;
   vertical-align: middle;
 }
 
@@ -1202,21 +1203,21 @@ front-css
   width          : 40px;
   height         : 40px;
   border         : 1px solid currentColor;
-  color          : #000000;
+  color          : $colorBlack;
   text-decoration: none;
   transition     : .25s;
 }
 
 .sample-pager__link:focus,
 .sample-pager__link:hover {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
   opacity         : .75;
 }
 
 .sample-pager__link--active {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
   pointer-events  : none;
 }
 
@@ -1238,8 +1239,8 @@ front-css
   padding-bottom : 10px;
   padding-left   : 30px;
   margin-bottom  : 10px;
-  border-bottom  : 4px solid #efefef;
-  color          : #777;
+  border-bottom  : 4px solid $colorVeryLightGray;
+  color          : $colorGray;
   text-decoration: none;
   transition     : .25s;
 }
@@ -1247,13 +1248,13 @@ front-css
 .sample-tab-navigation-link__list:focus,
 .sample-tab-navigation-link__list:hover {
   border-bottom-color: currentColor;
-  color              : #e25c00;
+  color              : $colorOrange;
   opacity            : .75;
 }
 
 .active {
   border-bottom-color: currentColor;
-  color              : #e25c00;
+  color              : $colorOrange;
   pointer-events     : none;
 }
 
@@ -1263,11 +1264,10 @@ front-css
 ================================================*/
 
 .sample-tab-navigation-menu {
-  background-color: #efefef;
-
-  margin-left : auto;
-  margin-right: auto;
-  max-width   : 960px;
+  background-color: $colorWhite;
+  margin-left     : auto;
+  margin-right    : auto;
+  max-width       : 960px;
 }
 
 .sample-tab-navigation-menu__inner {
@@ -1284,8 +1284,8 @@ front-css
   padding-bottom : 10px;
   padding-left   : 30px;
   margin-bottom  : 10px;
-  border-bottom  : 4px solid #efefef;
-  color          : #777;
+  border-bottom  : 4px solid $colorVeryLightGray;
+  color          : $colorGray;
   text-decoration: none;
   transition     : .25s;
 }
@@ -1293,7 +1293,7 @@ front-css
 .sample-tab-navigation-menu__list:focus,
 .sample-tab-navigation-menu__list:hover {
   border-bottom-color: currentColor;
-  color              : #e25c00;
+  color              : $colorOrange;
   opacity            : .75;
 }
 
@@ -1310,7 +1310,7 @@ front-css
 
 .menu-active {
   border-bottom-color: currentColor;
-  color              : #e25c00;
+  color              : $colorOrange;
   pointer-events     : none;
 
 }
@@ -1348,20 +1348,20 @@ front-css
 .sample-tab-menu-list {
 
   display   : block;
-  background: #ddd;
+  background: $colorLightGray;
   margin    : 0 2px;
   padding   : 10px 20px;
   cursor    : pointer;
 }
 
 .sample-tab-menu-list.is-active {
-  background: #ffffff;
+  background: $colorWhite;
 }
 
 .sample-tab-navigation-list {
   display   : none;
   opacity   : 0;
-  background: #ffffff;
+  background: $colorWhite;
   padding   : 50px 20px;
 }
 
@@ -1389,7 +1389,7 @@ front-css
   width     : 100%;
   max-width : 960px;
   margin    : 30px auto;
-  background: #fefefe;
+  background: $colorWhite;
 }
 
 .sample-tab-navigation-list h2 {
@@ -1399,7 +1399,7 @@ front-css
 
 .sample-tab-navigation-list li {
   padding      : 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $colorLightGray;
 }
 
 
@@ -1440,7 +1440,7 @@ front-css
 // .front-js-sample-title,
 .archive-title,
 .primary-title {
-  color: #000000;
+  color: $colorBlack;
 
 }
 
@@ -1485,7 +1485,7 @@ front-css
 
 // スクロール
 .scroll__child {
-  color     : #000000;
+  color     : $colorBlack;
   position  : relative;
   height    : 60vh;
   background: linear-gradient(90deg, rgba(209, 201, 201, 1) 25%, rgba(255, 255, 255, 1) 97%);
@@ -1578,7 +1578,7 @@ front-css
     left            : 0;
     right           : 0;
     bottom          : 0;
-    background-color: #777;
+    background-color: $colorGray;
     overflow        : hidden;
     opacity         : 0;
   }
@@ -1673,8 +1673,8 @@ front-css
 }
 
 .sample-command {
-  background-color: #000000;
-  color           : #ffffff;
+  background-color: $colorBlack;
+  color           : $colorWhite;
   padding         : 20px;
   border-radius   : 5px;
 }

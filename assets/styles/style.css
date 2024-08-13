@@ -1074,7 +1074,7 @@ front-css
   display: block;
   padding: 15px 5px;
   border-bottom: 4px solid transparent;
-  color: #222;
+  color: #222222;
   text-decoration: none;
   transition: 0.25s;
 }
@@ -1133,7 +1133,7 @@ front-css
 }
 .sample-header__inner a:link,
 .sample-header__inner a {
-  color: black;
+  color: #000000;
 }
 
 .sample-header__logo {
@@ -1221,7 +1221,7 @@ front-css
 ================================================*/
 .sample-front-css__content--footer {
   padding-top: 20px;
-  background-color: #222;
+  background-color: #222222;
 }
 
 .sample-footer__inner {
@@ -1281,7 +1281,7 @@ front-css
 }
 
 .sample-footer-child-nav__link {
-  color: #ddd;
+  color: #efebeb;
   font-size: 15px;
   text-decoration: none;
 }
@@ -1293,13 +1293,13 @@ front-css
 
 .sample-footer-copyright {
   display: block;
-  color: #ddd;
+  color: #efebeb;
   font-size: 12px;
   text-align: center;
 }
 
 .sample-footer--border-top-gray {
-  border-top: 1px solid #777;
+  border-top: 1px solid #777777;
 }
 
 /*===============================================
@@ -1437,7 +1437,7 @@ front-css
 }
 
 .sample-card__text {
-  color: #777;
+  color: #777777;
 }
 
 .sample-card__badge {
@@ -1551,7 +1551,7 @@ front-css
 .sample-horizontal-table__header {
   width: 20%;
   padding: 15px;
-  background-color: #efefef;
+  background-color: #efebeb;
   border-bottom: 1px solid #000000;
   font-weight: bold;
   vertical-align: middle;
@@ -1591,7 +1591,7 @@ front-css
 }
 
 .sample-vertical-table__header-row {
-  background-color: #efefef;
+  background-color: #efebeb;
 }
 
 .sample-vertical-table__header {
@@ -1648,7 +1648,7 @@ front-css
 
 .sample-cross-table__header {
   padding: 15px;
-  background-color: #efefef;
+  background-color: #efebeb;
   border-right: 1px solid #000000;
   border-bottom: 1px solid #000000;
   font-weight: bold;
@@ -1759,8 +1759,8 @@ front-css
   padding-bottom: 10px;
   padding-left: 30px;
   margin-bottom: 10px;
-  border-bottom: 4px solid #efefef;
-  color: #777;
+  border-bottom: 4px solid #efebeb;
+  color: #777777;
   text-decoration: none;
   transition: 0.25s;
 }
@@ -1782,7 +1782,7 @@ front-css
 タブナビゲーション メニュー
 ================================================*/
 .sample-tab-navigation-menu {
-  background-color: #efefef;
+  background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
@@ -1802,8 +1802,8 @@ front-css
   padding-bottom: 10px;
   padding-left: 30px;
   margin-bottom: 10px;
-  border-bottom: 4px solid #efefef;
-  color: #777;
+  border-bottom: 4px solid #efebeb;
+  color: #777777;
   text-decoration: none;
   transition: 0.25s;
 }
@@ -1857,7 +1857,7 @@ front-css
 
 .sample-tab-menu-list {
   display: block;
-  background: #ddd;
+  background: #d7d5d5;
   margin: 0 2px;
   padding: 10px 20px;
   cursor: pointer;
@@ -1895,7 +1895,7 @@ front-css
   width: 100%;
   max-width: 960px;
   margin: 30px auto;
-  background: #fefefe;
+  background: #ffffff;
 }
 
 .sample-tab-navigation-list h2 {
@@ -1905,7 +1905,7 @@ front-css
 
 .sample-tab-navigation-list li {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d7d5d5;
 }
 
 /*===============================================
@@ -2650,7 +2650,7 @@ front-css
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #777;
+  background-color: #777777;
   overflow: hidden;
   opacity: 0;
 }
