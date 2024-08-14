@@ -80,7 +80,7 @@
     <!-- ホームページ -->
     <?php if (is_home() || is_front_page()) : ?>
       <section class="fv fullwidth">
-        <div class="fv__inner">
+        <!-- <div class="fv__inner"> -->
           <div class="fv__tagline">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php echo the_content(); ?>
@@ -93,7 +93,7 @@
           <div class="fv__text">
             <img class="fullwidth" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/fv/fv-logo-text.png" alt="code-crew">
           </div>
-        </div>
+        <!-- </div> -->
       </section>
       <!-- ここからarchiveページ-->
     <?php elseif (is_post_type_archive()) : ?>
