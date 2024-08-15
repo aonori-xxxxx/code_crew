@@ -12,7 +12,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div class="container flex">
+  <div class="container">
   <div class="mobile-menu__btn">
         <span></span>
         <span></span>
@@ -46,18 +46,18 @@
       <!-- mobile-menu -->
 
       <!-- ここからPCヘッダーインナー -->
-      <div class="header__inner flex inner-width">
-        <figure class="header__logo flex">
+      <div class="header__inner inner-width">
+        <figure class="header__logo">
           <a href="<?php echo esc_url(home_url('/')); ?>">
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/header/logo.png" alt="code-crew">
           </a>
         </figure>
-        <nav class="header-nav flex">
+        <nav class="header-nav">
           <?php
           wp_nav_menu([
             'theme_location' => 'place_header',
             'container' => false,
-            'menu_class' => 'header-menu flex'
+            'menu_class' => 'header-menu'
           ]);
           ?>
           <div class="search-icon">

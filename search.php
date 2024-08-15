@@ -17,7 +17,7 @@ Template Name: searchページ
       <ul class="search-result-list">
         <li class="search-result-item">
           <a href="<?php the_permalink(); ?>">
-            <div class="search-result-wrapper flex">
+            <div class="search-result-wrapper">
               <figure class="search-result-img">
                 <?php
                 $image = get_the_post_thumbnail($post->ID, 'search');

@@ -18,7 +18,7 @@
 
   <div class="inner-width">
     <h2 class="section__title">最新の投稿</h2>
-    <div class="cards--col3 flex">
+    <div class="cards--col3">
       <?php
       $post_pages = get_post_page();
       if ($post_pages->have_posts()) :
