@@ -42,10 +42,6 @@ a {
   width: 100%;
 }
 
-.flex {
-  display: flex;
-}
-
 input {
   width: 100%;
 }
@@ -65,6 +61,7 @@ h3 {
 コンテナ
 ================================================*/
 .container {
+  display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -170,6 +167,7 @@ h3 {
 }
 
 .header__inner {
+  display: flex;
   justify-content: flex-start;
   height: inherit;
 }
@@ -185,6 +183,7 @@ h3 {
 
 .header__logo {
   align-items: center;
+  display: flex;
   height: inherit;
   margin-bottom: 0;
 }
@@ -206,9 +205,10 @@ h3 {
 }
 
 .header-menu {
-  height: inherit;
   align-items: center;
+  display: flex;
   gap: 0 20px;
+  height: inherit;
 }
 
 .search-icon {
@@ -362,7 +362,8 @@ h3 {
   font-size: clamp(16px, 2vw, 32px);
 }
 
-.cards--col3.flex {
+.cards--col3 {
+  display: flex;
   flex-wrap: wrap;
   gap: 0 3%;
   justify-content: space-around;
@@ -444,6 +445,7 @@ h3 {
 }
 
 .footer__inner {
+  display: flex;
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -458,6 +460,7 @@ footer a {
 }
 
 .footer-nav__menu {
+  display: flex;
   gap: 20px;
 }
 
@@ -555,6 +558,7 @@ single-front_css.php
 
 .search-result-wrapper {
   align-items: center;
+  display: flex;
   padding-bottom: 20px;
   padding-left: 0;
   padding-right: 0;

@@ -38,13 +38,11 @@ a {
   padding-left : 20px;
   padding-right: 20px;
   width        : 100%;
-
 }
 
-
-.flex {
-  display: flex;
-}
+// .flex {
+//   display: flex;
+// }
 
 input {
   width: 100%;
@@ -67,6 +65,7 @@ h3 {
 
 .container {
   // 画面の高さが足りない時に高さを調整するための設定。
+  display       : flex;
   flex-direction: column;
   min-height    : 100vh;
 }
@@ -101,9 +100,7 @@ h3 {
   }
 
   &.show {
-
     & span {
-
       &:first-child {
         transform: translateY(15px) translateX(-9px) rotate(-45deg)
       }
@@ -120,13 +117,12 @@ h3 {
 }
 
 .mobile-menu {
-  background-color   : $colorWhite;
-  height             : 100%;
-  position           : fixed;
-  transition         : transform 0.6s;
-  transform          : translateX(100%);
-  // top             : 94px;
-  z-index            : 10;
+  background-color: $colorWhite;
+  height          : 100%;
+  position        : fixed;
+  transition      : transform 0.6s;
+  transform       : translateX(100%);
+  z-index         : 10;
 
   &.show {
     transform: translateX(0%);
@@ -140,7 +136,6 @@ h3 {
   margin-right: auto;
   width       : 300px;
 }
-
 
 // モバイルインナー
 .mobile-menu__inner {
@@ -168,12 +163,6 @@ h3 {
   width       : 90%;
 }
 
-// .header-nav-mobile>.menu-item.show {
-//   background-color: pink;
-//   // background-color: #c5c1c1;
-//   transition      : background-color 0.6s;
-// }
-
 .header-nav-mobile .sub-menu {
   display: none;
 
@@ -196,12 +185,12 @@ h3 {
 }
 
 .header__inner {
+  display        : flex;
   justify-content: flex-start;
   height         : inherit;
 
   @include mq(slg) {
     justify-content: space-between;
-
   }
 
   a:link,
@@ -212,6 +201,7 @@ h3 {
 
 .header__logo {
   align-items  : center;
+  display      : flex;
   height       : inherit;
   margin-bottom: 0;
 }
@@ -230,19 +220,18 @@ h3 {
 
       &:hover {
         border-bottom: 1px solid $colorBlack;
-
-        opacity: 0.6;
-        scale  : 1.01;
+        opacity      : 0.6;
+        scale        : 1.01;
       }
     }
   }
 }
 
 .header-menu {
-  height     : inherit;
   align-items: center;
+  display    : flex;
   gap        : 0 20px;
-
+  height     : inherit;
 }
 
 .search-icon {
@@ -330,11 +319,6 @@ h3 {
   width              : 100%;
 }
 
-// .fv__inner {
-//   padding: 0 20px;
-
-// }
-
 .fv__tagline {
   font-size : 28px;
   left      : 50%;
@@ -343,7 +327,6 @@ h3 {
   transform : translate(-50%, -50%);
   word-break: keep-all;
   z-index   : 1;
-
 
   h2 {
     // 文字のシャドウ
@@ -418,7 +401,8 @@ h3 {
   font-size : clamp(16px, 2vw, 32px);
 }
 
-.cards--col3.flex {
+.cards--col3 {
+  display: flex;
   flex-wrap      : wrap;
   gap            : 0 3%;
   justify-content: space-around;
@@ -505,6 +489,7 @@ h3 {
 }
 
 .footer__inner {
+  display: flex;
   justify-content: center;
   margin         : 0 auto;
   padding-bottom : 20px;
@@ -522,9 +507,9 @@ footer {
 }
 
 .footer-nav__menu {
+  display: flex;
   gap: 20px;
 }
-
 
 /*===============================================
 プライバシー　privacy-policy.php
@@ -592,7 +577,6 @@ single-front_css.php
   }
 }
 
-
 .front-css__contents:after {
   content: "";
   display: block;
@@ -635,22 +619,20 @@ single-front_css.php
 
 .search-result-wrapper {
   align-items   : center;
+  display: flex;
   padding-bottom: 20px;
   padding-left  : 0;
   padding-right : 0;
   padding-top   : 20px;
-
 }
 
 .search-result-title {
   margin-left: 20px;
 }
 
-
 /*===============================================
 投稿ページ　single.php
 ================================================*/
-
 .single-wrapper {
   margin-left : auto;
   margin-right: auto;
@@ -662,7 +644,6 @@ single-front_css.php
 /*===============================================
 コンタクトフォーム page-contact.php
 ================================================*/
-
 .contact {
   margin-bottom: 30px;
 }

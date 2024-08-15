@@ -6,12 +6,12 @@
       </a>
     </figure>
   
-<div class="footer__inner flex inner-width">
+<div class="footer__inner inner-width">
     <?php
     wp_nav_menu([
       'theme_location' => 'place_footer',
       'container' => false,
-      'menu_class' => 'footer-nav__menu flex'
+      'menu_class' => 'footer-nav__menu'
     ]);
     ?>
 
