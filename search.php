@@ -21,7 +21,6 @@ Template Name: searchページ
               <figure class="search-result-img">
                 <?php
                 $image = get_the_post_thumbnail($post->ID, 'search');
-
                 if ($image) {
                   echo $image;
                 } else {
@@ -37,12 +36,10 @@ Template Name: searchページ
         </li>
       </ul>
     <?php endwhile; ?>
-
   <?php elseif (!get_search_query()) : ?>
     <p>検索ワードが入力されていません</p>
   <?php else : ?>
     <p>該当する記事は見つかりませんでした。</p>
   <?php endif; ?>
 </div>
-
 <?php get_footer(); ?>
