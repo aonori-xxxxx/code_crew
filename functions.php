@@ -92,17 +92,5 @@ function get_flexible_excerpt($number)
 
 add_theme_support('post-thumbnails');
 
-// フロントページのスキル用ポスト画像用のサイズ設定
-add_image_size('post-skill', 174, 130.5, true);
-
-// フロントページの共通用ポスト画像用のサイズ設定
-add_image_size('post-common', 348, 261, true);
-
-// フロントページのABOUT用ポスト画像用のサイズ設定
-add_image_size('post-about', 417.6, 313.2, true);
-
-//個別ページのアイテム用ポスト画像用のサイズ設定
-add_image_size('item-list', 452.4, 339.3, true);
-
 // 検索結果の画像用のサイズ設定
 add_image_size('search', 168, 168, true);
