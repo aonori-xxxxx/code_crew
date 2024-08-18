@@ -4,8 +4,7 @@
 function my_enqueue_styles()
 {
   $uri = esc_url(get_template_directory_uri());
-
-
+ 
   // フォント
   wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200', array());
   wp_enqueue_style('googlefonts-notosans', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap', array());
@@ -20,8 +19,7 @@ function my_enqueue_styles()
     wp_enqueue_style('lorder2', $uri . '/assets/styles/style-lorder2.css');
   } elseif (is_single('428')) {
     wp_enqueue_style('lorder3', $uri . '/assets/styles/style-lorder3.css');
-  }
-  
+  }  
   wp_enqueue_style('style', $uri . '/assets/styles/style.css');
 
   // JavaScriptファイル
@@ -44,7 +42,6 @@ register_nav_menus(array(
   'place_header' => 'ヘッダーナビ',
   'place_footer' => ' フッターナビ',
 ));
-
 
 // wp_nav_menuのliにclass追加
 function add_additional_class_on_li($classes, $item, $args)
@@ -73,7 +70,6 @@ add_action('init', function () {
   remove_filter('the_content', 'wpautop');
 });
 
-
 function title_space_br()
 {
   $title = get_the_title();
@@ -81,14 +77,12 @@ function title_space_br()
   echo $title;
 }
 
-
 function get_flexible_excerpt($number)
 {
   $value = get_the_excerpt();
   $value = wp_trim_words($value, $number, '...');
   return $value;
 }
-
 
 add_theme_support('post-thumbnails');
 
